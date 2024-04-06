@@ -1,8 +1,8 @@
 
-Below is a simple README.md template for your database schema:
+Below is a README.md template for database schema:
 
 Database Schema Documentation
-This repository contains the documentation for the database schema of a fictional company's logistics system. The database is designed to manage information about branches, customers, orders, routes, vehicles, and their relationships.
+This repository contains the documentation for the database schema . The database is designed to manage information about branches, customers, orders, routes, vehicles, and their relationships.
 
 Tables
 Branch: Contains information about different branches of the company.
@@ -10,8 +10,6 @@ Branch: Contains information about different branches of the company.
 Customers: Stores details of customers who place orders.
 
 Orders: Records details of orders placed by customers.
-
-Output: [Details missing] (Please provide more information about this table.)
 
 Routes: Manages information about various delivery routes.
 
@@ -42,7 +40,7 @@ parent_vehicle_id: (INT) Identifier of the parent vehicle (if applicable).
 parent_branch_id: (INT) Identifier of the parent branch (if applicable).
 The Final outout is:
 vehicle_id	product_name	total_quantity
-		5001	    productA	        10
+    5001	    productA	        10
     5001	    productD	        20
     5002	    productA	        30
     5002	    productB	        15
