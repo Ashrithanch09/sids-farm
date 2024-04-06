@@ -1,0 +1,21 @@
+--the code for output is:--
+SELECT 
+    vehicle_id, 
+    product_name,
+    SUM(quantity) AS total_quantity
+FROM 
+    orders
+WHERE 
+    order_status = 'confirmed' -- or any other relevant status
+    AND delivery_date BETWEEN '2024-01-01' AND '2024-01-31' -- Example date range
+GROUP BY 
+    vehicle_id, product_name
+ORDER BY 
+    vehicle_id, product_name;
+--final output--
+
+vehicle_id	product_name	total_quantity
+5001	         productA	        10
+5001	         productD	        20
+5002	         productA	        30
+5002	         productB        	15
