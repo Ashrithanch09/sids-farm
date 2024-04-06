@@ -1,0 +1,12 @@
+--now we want to create a file of Routes:--
+CREATE TABLE Routes (
+    route_id INT PRIMARY KEY,
+    route_name VARCHAR(255) NOT NULL,
+    vehicle_id INT,
+    FOREIGN KEY (vehicle_id) REFERENCES Vehicles(vehicle_id)
+);
+-- Insert data into the Routes table
+INSERT INTO Routes (route_id, route_name, vehicle_id) VALUES
+(1, 'Route 101', 1),
+(2, 'Route 202', 2),
+(3, 'Route 303', 4);
