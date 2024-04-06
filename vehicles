@@ -1,0 +1,15 @@
+--now we want to create a file of vehicles:--
+CREATE TABLE Vehicles (
+    vehicle_id INT PRIMARY KEY,
+    vehicle_name VARCHAR(255) NOT NULL,
+    parent_vehicle_id INT,
+    parent_branch_id INT,
+    FOREIGN KEY (parent_vehicle_id) REFERENCES Vehicles(vehicle_id),
+    FOREIGN KEY (parent_branch_id) REFERENCES Branch(branch_id)
+);
+-- Insert data into the vehicles table
+INSERT INTO Vehicles (vehicle_id, vehicle_name, parent_vehicle_id, parent_branch_id) VALUES
+(1, 'Vehicle A', NULL, 1),
+(2, 'Vehicle B', NULL, 2),
+(3, 'Vehicle C', 1, 1),
+(4, 'Vehicle D', NULL, 3);
