@@ -1,0 +1,13 @@
+--now we want to create a file of customers:--
+CREATE TABLE Customers (
+  customer_id INT PRIMARY KEY,
+  customer_number VARCHAR(255) NOT NULL,
+  route_id INT PRIMARY KEY,
+  FOREIGN KEY (route_id) REFERENCES route(route_id)
+);
+-- Insert data into the Customers table
+INSERT INTO Customers (customer_id, customer_number, route_id)
+VALUES
+  (1, 'CUST0001', 1),
+  (2, 'CUST0002', 2),
+  (3, 'CUST0003', 3);
