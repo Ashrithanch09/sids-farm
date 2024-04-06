@@ -1,0 +1,10 @@
+--now we want to create a file of branch:--
+CREATE TABLE Branch (
+    branch_id INT PRIMARY KEY,
+    branch_name VARCHAR(255) NOT NULL
+);
+-- Insert data into the branch table
+INSERT INTO Branch (branch_id, branch_name) VALUES
+(1, 'Downtown Branch'),
+(2, 'Uptown Branch'),
+(3, 'Suburban Branch');
